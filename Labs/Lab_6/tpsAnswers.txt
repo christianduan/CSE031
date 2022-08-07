@@ -1,0 +1,23 @@
+Group Members: Suyeon Shin, Nikita Yadav, Christian Duan
+
+TPS 1:
+1. Text Segment: 0x00400000
+   Data Segment: 0x10010000
+2. The source code gives the basic code, which is one to one. The basic code uses 
+registers.
+3. The difference between 2 address locations is 32 bytes.
+4. There are 8 columns per address location.
+5. For one column, there is a difference of 4 bytes, which is one cell.
+6. You create a new variable by writing, at the top of the file, "m:     .word 20".
+7. The address that is stored in the value of m is 0x10010000.
+9. str1 is being stored at 0x10010008, 0x1001000c, and 0x1001010.
+10. The string is being stored in little endian.
+11. In order to print str1, you would need to call a "li $v0, 4" and stored the 
+address in "$a0".
+12. "la $t3, n" loads the address of n to the register $t3. The value stored in $t3
+is the address of n.
+
+TPS 2:
+1. We do not use one instruction for inequalities in MIPS because the inequalities
+use $s0 to compare and the difference between the different instructions allow for 
+the instructions to work and not have conflict with one another.

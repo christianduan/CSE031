@@ -1,0 +1,23 @@
+Type main()
+    Declare variables
+
+    First integer input
+    
+    If input is 0
+        Output "There is no average to compute!"
+    Else run ordinal checker
+        While input does not equal 0
+            Modulo iteration of 10
+            Add to iteration
+            If ordinal of iteration ends with th
+            Else if ordinal of iteration ends with rd
+            Else if ordinal of iteration ends with nd
+            Else ordinal of iteration ends with st
+    
+    x is absolute of input
+    While x is not 0
+        Add to sum mod of input by 10
+        Reassign input with input divided by 10
+
+    Output even average
+    Output odd average 

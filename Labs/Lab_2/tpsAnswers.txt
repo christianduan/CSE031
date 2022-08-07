@@ -1,0 +1,25 @@
+TPS 1
+1. Christian Duan, Nikita Yadav, Dovran Rejepov, Christian Urbina, Francisco Arias
+
+TPS 2
+1. To compile punishment.c to debug with GDB, you would compile the program using the "-g" flag to include
+debugging information for your output file
+2. To load it in GDB, you would have to type "gdb [output file name]" in the terminal and the debugging 
+process begins.
+4. Breakpoints are lines of code where code will stop executing. To set a breakpoint at a certain line, you
+would have to type "break [filename]:[linenumber]" in the terminal.
+5. To run the program line by line, you would have to us the "s" flag to go step by step of the code.
+6. To see the value of a variable, you type "print [variable name]" to see the value of a variable.
+7. To let the program finish, you type "finish".
+8. To exit from GDB, you type "quit" after the program finishes running or type "finish" to finish running the
+the program and type "quit" to exit GDB.
+
+TPS 3
+1. There are four variables and two pointers; px and py.
+2. The values of x, y, and arr[0] are large values that are difficult to interpret. This happens because there
+we have not assigned any value to the variables.
+3. To prevent x, y, and arr from having unexpected values, you would need to initialize the variables to ensure
+that there are no unexpected values. 
+7. Create a pointer and assign it to arr. Array names are same as pointers as their addresses are the same.
+8. The results makes sense as the addresses are the same if you were to print the pointer to arr, the addresses
+will be the same. 

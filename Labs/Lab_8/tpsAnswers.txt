@@ -1,0 +1,15 @@
+Group Members: 
+
+TPS 1:
+5. We do not need to declare n in the .data segment. We also do not need to declare the la and lw instructions.
+
+TPS 2:
+1. The program would output 29 if 5 were to be entered.
+2. The main functions in recusion.s asks that user for input and takes input. It then takes the input and jumps
+and links to the recursion fucntion.
+4. We should use the register "$a0"
+5. The register that we expect is $v0. We can move $v0 into a different temporary register that can be used later
+7. The first thing that we is in the stack is the register $ra. 
+10. We need to save $a0 into the stack as we are using it for the next recursion call.
+12. The return values will be replaced after each call of recursion.
+15. The return value is the value that is being stored in $v0.

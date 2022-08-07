@@ -1,0 +1,21 @@
+Group Members: Emmanuel Jerez, Christian Duan
+
+TPS 1:
+1. A procedure is a function that doesn't return a value. A function returns a value does not always need to.
+Lastly, a method is a function that is a class of functions that use object orientation.
+4. The line that calls SUM is line 20. This line is the label for the subroutine that adds the two variables
+to get the sume.
+5. We cannot not use j, we are unable to call the function multiple times in which we may need to go to.
+6. The return address is supposed to be saved in $ra. The value that is being saved here is 0. This does not
+make sense.
+7. When trying to run the program, an error occurs regarding the program counter value.
+8. The address of the statemnt should be 0x00400020.
+10. The new return address is 0x00400028. The output of the program is 15.
+11. The operator that we should use is jal.
+
+TPS 2:
+1. The output of the program would be 38.
+3. When MAIN calls SUM, SUM knows where to return as the return is being handled and stored automatically into
+$ra using the jal operator. The return address of SUM is beig changed to what is being held in SUB.
+5. The original value is being replaced by the value of m. This is a proble, as it alters the input value that
+is being used for the program to be excuted properly.

@@ -1,0 +1,57 @@
+Group Members:Nikita Yadev, Suyeon Shin, Christian Duan
+
+TPS 1:
+1. Cache is a reserved storage where temporary data is stored for quick data retrieval. We need cache
+to speed up our applications and improve the efficiency of the application by having temporary data
+that can be accessed quickly.
+
+2. Two methodfs of organizing a cache:
+    a. Direct-mapped
+    b. N-way set associative 
+
+4. 4 bits are required to offset a 16B block of cache. THe number of bits in offset as a function
+is log_2(16). It is not practical to have a cache of block size 1B.
+
+5. We need 6 index bits. The number of bits a function of number of blocks is log_2(64).
+
+6. To know the total size of the cache, you would have divide the number of cache by the block size.
+
+7. The left over bits are used to determine the sign of the tag. They are important for finding
+certain data that is stored in the cache and different blocks are mapped to the same spot in the 
+main memory.
+
+8. 
+a. Main memory: 2^20 = 1 million bytes
+b. Offset bits: log_2(8) = 3 bits
+c. Number of blocks: 128/8 = 16 blocks
+d. Number of index bits: log_2(16) = 4 bits
+e. Number of tag bits: 13 bits
+   ___________
+f. |13 1 1 8B|
+   -----------
+   |         | Total of 16 Blocks
+   |         |
+   ___________
+g. 79 bits/row
+
+TPS2: 
+1. The disadvantage of direct-mapped cache is a the data being mapped to the same spot. The cache 
+miss that direct-mapped introduces is a crash miss.
+
+3. We need 8 bits for the index. log_2(1024/4)
+
+4.
+a. Main memory: 2^20 = 1 million bytes 
+b. Offset bits: log_2(8) = 3 bits
+c. Number of blocks: 128/8 = 16 blocks
+d. Number of sets: 8 sets
+e. Numbers of index bits: log_2(8) = 3 bits
+f. NUmber of tag bits: 20-3-3 = 14 bits
+   ___________
+g. |14 1 1 8B| 2 block sets
+   |         |
+   -----------
+   |         | Total of 16 Blocks
+   |         |
+   ___________
+h. 80 bits/row

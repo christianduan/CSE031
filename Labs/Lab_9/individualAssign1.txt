@@ -1,0 +1,33 @@
+Individual Assignment 1
+
+Line #7: addi $s0, $zero, -15
+Binary: 001000 10000 00000 1111111111110001
+Machine code: 0x2010fff1
+
+Machine code: 0x2010fff1
+Binary: 001000 10000 00000 1111111111110001
+Line #7: addi $s0, $zero, -15
+
+Line #14: slt $t0, $s0, $s1
+Binary: 000000 01000 10000 10001 00000 101010
+Machine code: 0x0211402a
+
+Machine code: 0x0211402a
+Binary: 000000 01000 10000 10001 00000 101010
+Line #14: slt $t0, $s0, $s1
+
+Line #17: beq $t0, $zero, LEEQ
+Binary: 000100 01000 00000 0000000000000110
+Machine code: 0x11000006
+
+Machine code: 0x11000006
+Binary: 000100 01000 00000 0000000000000110
+Line #17: beq $t0, $zero, LEEQ
+
+Line #20: j GRT
+Binary: 000010 00000100000000000000000111
+Machine code: 0x08100007
+
+Machine code: 0x08100007
+Binary: 000010 00000100000000000000000111
+Line #20: j GRT

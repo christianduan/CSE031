@@ -1,0 +1,23 @@
+TPS 1
+1. Christian Duan, Veronika Nechaeva, Titus Sun 
+2. ubuntu.com, howtogeek.com, makeuseof.com
+4. Bookmarked three linux terminal tutorials
+
+TPS 2 
+1. You can use "ctrl+alt+T" to quickly open a terminal. You can also search up terminal to open a terminal.
+1a. You can use open more than one terminal at the same time.
+1b. You might want to open multiple terminals at the same time for different tasks such as client sided coding and server sided coding.
+2. To tell what contents are in the current directory, you would have to use "ls" to list out the contents of a directory.
+3. To navigate to the "Desktop" directory, you would have to type "cd .." twice to go back one directory at a time.
+4. To create a new directory, you would have to type "mkdir [CSE31]" in the terminal to create a new directory named "CSE31".
+
+TPS 3
+1. Bookmarked two different GCC references.
+2. rapidtables.com, cprogramming.com
+3. The command to compile the "main.c" program is "gcc main.c"
+4. You know your program was compiled correctly, there is no error and when you have an a.out file in your directory.
+5. The "-c" flag compiles the source files without linking.  
+6. The "-g" flag generates debug information to be used by a GDB debugger.
+7. To change the executable name from "main" to "cselab1", you type "mv main cselab1".
+8. When you compile your code with just "gcc main.c", you would get an executable named "a.out".
+9. To run the executable, you would have to type "./a.out" to run the compiled program.

@@ -1,0 +1,61 @@
+Group Mmembers: Suyeon Shin, Nikita, Christian Duan
+
+TPS 1:
+4. Machine instuctions contains 32 bits.
+
+5. There are three types of machine instructions, r, i and j.
+    a. i-format: addi $t0, $t0, 4
+    b. j-format: j END
+    c. r-format: add $t1, $t2, $t3
+
+6. 
+    a. Line 7 is an i-format instruction type. 
+        Four fields: opcode, rs, rt, immediate
+    b. opcode: addi (0x8)
+       rs: $s0 (0x10)
+       rt: $zero (0X0)
+       immediate: 25 (0x19)
+    c. Machine: 0x20100019
+       Binary: 0010 0000 0001 0000 0000 0000 0001 1001
+               001000 00000 10000 0000000000011001
+
+7. 
+    a. Machine: slt (0x0230402a)
+       Binary: 0000 0010 0011 0000 0100 0000 0010 1010
+               000000 10001 10000 01000 00000 101010
+    b. This line is a r-format instruction. We can tell that this code is a r-format since the opcode
+    of all r-format instruction are 0. There are six fields for r-format instructions: opcode, rs, rt,
+    rd, shamt, and funct.
+    c. opcode: 000000 (0x0)
+       rs: 10001 (0x11)
+       rt: 10000 (0x10)
+       rd: 01000 (0x8)
+       shamt: 00000 (0x0)
+       funct: 101010 (0x2a)
+    d. The operation of this code is slt. We can tell the opeation by the opcode/funct. Since the funct
+    is 0x2a, then it is slt.
+    e. The final MIPS instruction is slt $t0, $s1, $s0.
+
+8.
+    a. The format of this instruction is an i-format instruction.
+    b. opcode: 0x5
+       rs: 0x8
+       rt: 0x0
+    c. The name of the target label is LESS. The address is 0x0040001c.
+    d. We cannot use this as the immediate field. This is because the immediate is only 16 bits and the
+    address is 32 bits.
+    e. We can find the value of the immediate field by counting the number of lines from the NEXT line
+    of the branch instruction.
+    f. Hex: 0x15000001
+       Binary: 001001 01000 0000000000001
+    
+9.
+    a. The format of this instruction is a j-format instruction. There are only two fields.
+    b. The opcode is 0x2.
+    c. This instruction jumps to the label GREQ, which has the address 0x00400030.
+    d. You can only use 26 bits in the instruction. We can squeeze the address by "discarding" the first
+    four bits and the last two bits. We do this to have the address fit in the 26 bits that the address
+    can be.
+       Binary: 0000 0100 0000 0000 0000 0011 00
+    e. Hex: 0x0810000c
+       Binary: 0000 01000 0001 0000 0000 0000  0000 1100

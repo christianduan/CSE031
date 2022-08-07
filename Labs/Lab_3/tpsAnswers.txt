@@ -1,0 +1,13 @@
+Group Members: Nikita Yadav, Alexander Lagarda, Affan Nauman
+
+TPS 1:
+1. There is the static, which stores global variables, the stack, which stores local variables, and the heap, which stores dynamic variables.
+2a. There are three variables declared.
+2b. Two of the variables are pointers.
+2c. The variable on line 7 is on the stack, the variable on line 8 is in the stack, and the variable on line 9 is stack.
+2d. The pointer "ptr" is in the stack memory pool.
+
+
+TPS 2:
+3. Structures are stored in the order in which they are declared. Structures are also stored in memory cells that are 4 bytes in size. The
+relationship between the pointer and destination is that the pointer must be copied to the destination point.

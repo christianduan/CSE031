@@ -1,0 +1,14 @@
+Individual Assignment 1
+
+1. My cpu has 3 levels of cache. There is separate L1 cache for data and instructions.
+
+2. L1 is 6 x 32 KBytes, L2 is 6 x 256 KBytes, and L3 is 9 MBytes.
+
+3. 
+
+4. The caches are set associative. L1 cache is 8-way, L2 cache is 4-way, and L3 cache is 12-way.
+
+5. 
+    Tag Bits: 
+    Index Bits: 
+    Offset Bits: 

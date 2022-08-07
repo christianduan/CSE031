@@ -1,0 +1,17 @@
+Assignment 1
+1. The line that caused the segmentation fault is line 18 of the program.
+2. To fix the line properly, we would reference input rather which creates an array
+of integers to be referenced to.
+3. The bug here is that the function is not accessing the values of the array and
+adding them to a variable for the sum of the values.
+4. To fix this bug, we create memory addresses for sum to be accessed and added to in
+order to find the average of the inputted integers.
+
+Assignment 2
+1. The output is not as expected. We are trying to append one string to another but
+the second string is being repeated at the end.
+2. The output is not as expected. The program is holding onto the previous string and
+replacing where the previous characters were.
+3. The output is not as expected. I think that the output results from the appended
+strings are being repeated due to memory related issues where the memory is being
+duplicated.

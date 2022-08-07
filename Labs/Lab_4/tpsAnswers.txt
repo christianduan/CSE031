@@ -1,0 +1,25 @@
+Group Members: Suyeon Shin, Nikita Yadav, Christian Duan
+
+TPS 1:
+1. We wexpect the program to print out 2.
+2. We expect the code to print out 2.
+3. printf("%x\n,", four_ints[0]);
+   outputs: 44434241
+4. The print statement printed out 2. Slightly surprised by the output.
+5a. There is only one array that it allocated.
+5b. fout_ints and four_c ARE pointing to the same location.
+5c. four_ints: 44434241, four_c: 41
+6. The addresses of consecutive indices are 4 bytes apart from one another. This means that the values
+are integers as integers require 4 bytes of memory to be stored.
+8. The addresses of consecutive indices are 1 byte apart from one another. This indicates that the values
+that are being stored are characters rather than integers being stored.
+10. In four_ints, the elements being stored needed 4 bytes to store then whereas in four_c, the elements
+being stored needed 1 byte to be stored. Both arrays start at the same memory address since four_ints since 
+was type casted to four_c.
+
+TPS 2:
+1. Line 8 of the program allocates the memory needed to store the contents of **arr for a 2D arrays.
+2. To access the ith value of the array, you would need to use a nested for-loop to access the certain
+ith value.
+4. We need to pass the size as an argument because the function does not know what the size is since it
+is not specified.
